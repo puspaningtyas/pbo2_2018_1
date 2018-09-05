@@ -22,9 +22,18 @@ public class DaftarAntrianDialog extends JDialog{
     public void init(){
         this.setLayout(null);
         
+        judulLabel = new JLabel("DAFTAR PASIEN");
+        judulLabel.setBounds(100,-30,100,90);
+        this.add(judulLabel);
+        
         namaLabel = new JLabel("NAMA");
         namaLabel.setBounds(10,10,100,90);
         this.add(namaLabel);
+        
+        namaText = new JTextField();
+        namaText.getText();
+        namaText.setBounds(100,40,150,30);
+        this.add(namaText);
     }
     
     public DaftarAntrianDialog(String title) {
