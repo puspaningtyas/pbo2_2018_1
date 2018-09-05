@@ -1,5 +1,5 @@
 
-package pbo2;
+package model;
 
 // @author FransiskaAW
 /* program pada kelas ini digunakan untuk memasukan , memproses dan mengirim nilai balikan berupa
@@ -16,9 +16,14 @@ public class Pasien {
     private int bulanLahir; //mendeklarasikan atribut bulanlahir bertipe integer dalam bentuk private
     private int tahunLahir; //mendeklarasikan atribut tahunlahir bertipe integer dalam bentuk private
 
+    /**
+     * Method ini
+     * @param noRekamMedis
+     * @throws NumberFormatException 
+     */
     public void setNoRekamMedis(String noRekamMedis) throws NumberFormatException {
         // method ini digunakan untuk memproses nomer rekam medis yang dilakukan selama nomer rekam medis lebih dari atau sama dengan 6
-        if (noRekamMedis.toCharArray().length >= 6) {
+        if (noRekamMedis.toCharArray().length >= 6) { // cek 6 digit string
             this.noRekamMedis = noRekamMedis;
         } else {
             throw new NumberFormatException(" Nomer Rekam Medis Anda Salah");
