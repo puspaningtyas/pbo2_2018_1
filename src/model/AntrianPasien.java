@@ -13,6 +13,11 @@ public class AntrianPasien extends Pasien { // Kelas Antrian Pasien adalah turun
     private Klinik Klinik; // mendeklarasikan atribut Klinik bertipe Klinik dalam bentuk private
     private Pasien daftarpasien[]; // mendeklarasikan atribut daftarpasien[] bertipe Pasien dalam bentuk private.
 
+    /**
+     * Fungsi membaca tanggal antrian
+     * @param tanggalantrian
+     * @return 
+     */
     public int getTanggalantrian(int tanggalantrian) {
         // method untuk mengirim nilai balikan tanggalantrian
         return tanggalantrian;

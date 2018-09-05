@@ -23,6 +23,15 @@ public class Testpasien {
         } catch (Exception ex) {
             Logger.getLogger(Testpasien.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        Pasien test1 = new Pasien();
+        test1.setNama("Adi");
+        try {
+            test1.setBulanLahir(13);
+            System.out.println("bulan = "+test1.getBulanLahir());
+        } catch (Exception ex) {
+            Logger.getLogger(Testpasien.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
  
 }
