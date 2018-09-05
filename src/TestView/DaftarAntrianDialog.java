@@ -12,7 +12,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author admin
+ * @author Satrio
  */
 public class DaftarAntrianDialog extends JDialog{
     private JLabel judulLabel, namaLabel;
